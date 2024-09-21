@@ -21,6 +21,12 @@
             echo '降順にソートします。<br>';
             rsort($array);
             }
+
+            // ソートした内容を表示
+            foreach ($array as $num) {
+            echo $num . '<br>';
+            }
+
         }
 
         // 配列の値を設定
@@ -29,18 +35,8 @@
         // 配列を昇順にソート
         sort_2way($nums, true);
 
-        // ソートした内容を表示
-        foreach ($nums as $num) {
-            echo $num . '<br>';
-        }
-
         // 配列を降順にソート
         sort_2way($nums, false);
-
-        // ソートした内容を表示
-        foreach($nums as $num) {
-            echo $num . '<br>'; 
-        }
         ?>
     </p>
 </body>
